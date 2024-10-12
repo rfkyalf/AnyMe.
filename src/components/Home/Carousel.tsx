@@ -51,8 +51,8 @@ export default function Carousel({ upcomingAnime }: { upcomingAnime: any[] }) {
               height={5000}
               className="absolute h-full w-full object-cover -z-20"
             />
-            <div className="absolute h-full w-full bg-gradient-to-r from-black/95 from-1% to-black/10 -z-10"></div>
-            <div className="absolute h-full w-full bg-gradient-to-t from-black -z-10"></div>
+            <div className="absolute h-full w-full bg-gradient-to-r from-neutral-950/95 from-1% to-neutral-950/10 -z-10"></div>
+            <div className="absolute h-full w-full bg-gradient-to-t from-neutral-950 -z-10"></div>
             <div className="px-20 flex flex-col justify-center h-full">
               <h3 className="text-neutral-50 text-base font-medium bg-violet-900 w-fit px-4 py-1 mb-6">
                 Top Anime
