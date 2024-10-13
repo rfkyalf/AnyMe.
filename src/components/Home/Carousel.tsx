@@ -42,7 +42,7 @@ export default function Carousel({ upcomingAnime }: { upcomingAnime: any[] }) {
         className="flex transition-transform duration-300 h-full"
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
-        {upcomingAnime.map((anime: any) => (
+        {upcomingAnime?.map((anime: any) => (
           <div key={anime.mal_id} className="min-w-full relative">
             <Image
               src={anime.trailer.images.maximum_image_url}

@@ -34,7 +34,7 @@ export default async function SeasonalAnimeSection() {
                 height={300}
                 className="h-[300px] w-full object-cover"
               />
-              <div className="w-full h-full absolute bg-gradient-to-t from-violet-950 via-neutral-950/5 to-neutral-950/0 top-0"></div>
+              <div className="w-full h-full absolute bg-gradient-to-t from-neutral-900 via-neutral-950/5 to-neutral-950/0 top-0"></div>
               <div className="absolute bottom-0 p-2 flex flex-col justify-between h-full w-full">
                 <p
                   className={`text-base px-2 py-1 w-fit text-neutral-200 self-end  ${
