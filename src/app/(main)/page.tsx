@@ -1,6 +1,6 @@
-import FeaturedColSection from '@/components/Home/FeaturedColSection';
+import FeaturedColSection from '@/components/Home/FeaturedSection';
 import HeroSection from '@/components/Home/HeroSection';
-import SeasonalAnimeSection from '@/components/Home/SeasonalAnimeSection';
+import SeasonalAnimeSection from '@/components/Home/SeasonalSection';
 
 export default function HomePage() {
   return (
