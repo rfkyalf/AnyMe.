@@ -1,3 +1,4 @@
+import ByGenreSection from '@/components/Home/ByGenreSection';
 import FeaturedColSection from '@/components/Home/FeaturedSection';
 import HeroSection from '@/components/Home/HeroSection';
 import SeasonalAnimeSection from '@/components/Home/SeasonalSection';
@@ -12,6 +13,7 @@ export default function HomePage() {
       <FeaturedColSection />
       <UpcomingSection />
       <TopMoviesSection />
+      <ByGenreSection />
     </main>
   );
 }
