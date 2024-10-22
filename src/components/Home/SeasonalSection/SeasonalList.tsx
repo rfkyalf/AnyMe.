@@ -13,7 +13,7 @@ export default async function SeasonalList() {
   return (
     <div>
       <div className="flex justify-between items-end">
-        <div>
+        <div className="relative">
           <h1 className="text-[35px] text-neutral-50 font-bold">
             Seasonal Anime
           </h1>
@@ -35,17 +35,29 @@ export default async function SeasonalList() {
             />
             <div className="w-full h-full absolute bg-gradient-to-t from-neutral-900 via-neutral-950/5 to-neutral-950/0 top-0"></div>
             <div className="absolute bottom-0 p-2 flex flex-col justify-between h-full w-full">
-              <p
-                className={`text-base px-2 py-1 w-fit text-neutral-200 self-end ${
-                  anime.score < 6
-                    ? 'bg-red-600'
-                    : anime.score < 8
-                    ? 'bg-yellow-600'
-                    : 'bg-green-600'
-                }`}
-              >
-                &#9733; {anime.score}
-              </p>
+              <div className="flex justify-between items-center">
+                {anime.episodes === null ? (
+                  <p className="text-base px-2 py-1 w-fit text-neutral-200 bg-violet-700">
+                    Ep ??
+                  </p>
+                ) : (
+                  <p className="text-base px-2 py-1 w-fit text-neutral-200 bg-violet-700">
+                    Ep {anime.episodes}
+                  </p>
+                )}
+
+                <p
+                  className={`text-base px-2 py-1 w-fit text-neutral-200 ${
+                    anime.score < 6
+                      ? 'bg-red-600'
+                      : anime.score < 8
+                      ? 'bg-yellow-600'
+                      : 'bg-green-600'
+                  }`}
+                >
+                  &#9733; {anime.score}
+                </p>
+              </div>
               <p className="text-base text-neutral-200">{anime.title}</p>
             </div>
           </div>
